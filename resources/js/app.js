@@ -10,7 +10,7 @@ import App from './pages/App.vue';
 let app = createApp(App);
 
 const router = createRouter({
-    history: createWebHistory('pranav/task_manager'),
+    history: createWebHistory(window.location.pathname.split('/').slice(0, 3).join('/') + '/'),
     routes: routes
 });
 
